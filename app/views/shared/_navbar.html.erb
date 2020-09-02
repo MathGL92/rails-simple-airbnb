@@ -1,0 +1,19 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <%= link_to "Simple Airbnb", root_path, class: "navbar-brand" %>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="ml-auto d-flex">
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" name="query" type="search" placeholder="Search" aria-label="Search" value="<%= params[:query] %>">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      <%= link_to "Add Flat", new_flat_path(@flat), class: "btn btn-outline-primary my-2 my-sm-0 ml-2" %>
+    </div>
+  </div>
+</div>
+
